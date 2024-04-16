@@ -15,11 +15,11 @@ main {
     background-color: #f5f5f5;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.navbar .navbar-expand-lg .navbar-dark .bg-dark{
+.navbar .navbar-expand-lg .navbar-dark .bg-dark {
     position: sticky;
 }
 
@@ -93,4 +93,20 @@ a{
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+.logo:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
