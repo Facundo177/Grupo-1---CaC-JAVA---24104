@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo 1</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./assets/img/MaterialSymbolsCamera.svg" alt="Logo" height="32"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./pages/404.html">404</a></li>
+              <li><a class="dropdown-item" href="./pages/logged.html">Logged</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <a href="./pages/login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+          <a href="./pages/registro.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <main>
+
+<!-- Landing con imágenes -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/paisaje-primavera-1462x975.webp" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false">
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Título de ejemplo</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure nostrum sed excepturi hic reiciendis ipsa quasi obcaecati, assumenda reprehenderit necessitatibus enim voluptatibus consectetur? Repudiandae deleniti sed eius fugiat quo!</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Regístrate</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/amanecer-playa-1462x2047.webp" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"> 
+          
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Título de ejemplo</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem esse minima dicta nulla eaque deserunt ut a fugit eligendi eos quam, perferendis ea laboriosam, dolor exercitationem nobis, at dolorum? Deleniti!</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Leer más...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/fotografo-paisajes-1462x792.webp" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false">
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Título de ejemplo</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti neque magni ab culpa? Voluptatem accusantium sequi inventore natus, quisquam praesentium voluptatibus labore corrupti, nesciunt officiis quod quas dolore unde aperiam.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Galería</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+<!-- Galería de fotos -->
+
+<div class="container text-center">
+
+<div class="row">
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 mb-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Formulario de contacto -->
+
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
