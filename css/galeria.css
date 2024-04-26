@@ -1,0 +1,22 @@
+#galeria .col-lg-4{
+    margin: 0 !important ;
+    padding:25px ;
+
+}
+
+
+#galeria img{
+    width: 100%;
+    height :490px ;
+}
+#galeria img:hover{
+    border: 5px  solid #000;
+}
+.tex-m{
+    font-family: abel;
+    font-size: 90px;
+}
+p{
+    font-family: kanit;
+    font-size: 20px;
+}

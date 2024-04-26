@@ -1,4 +1,13 @@
 /* Carousel base class */
+h1{
+  font-family: Cedarville_Cursive !important;
+  font-size: 80px !important;
+ 
+}
+p{
+  font-size: abel !important;
+  font-size: 20pxpx !important;
+}
 .carousel {
   margin-bottom: 4rem;
 }
@@ -76,14 +85,14 @@ body{
 
 
 #carousel-1{
-  background-image: url("../assets/img/paisaje-primavera-1462x975.webp");
+  background-image: url("../img1/portada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
 }
 
 #carousel-2{
-  background-image: url("../assets/img/amanecer-playa-1462x2047.webp");
+  background-image: url("../img1/header2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -94,4 +103,10 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light; 
+}
+.card{
+  
+    max-width: 100%; /* Establece la anchura máxima de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+ 
 }

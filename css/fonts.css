@@ -1,0 +1,15 @@
+@font-face {
+    font-family:abel;
+    src: url("../fonts/abel/Abel-Regular.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: kanit;
+    src: url("../fonts/Kanit/Kanit-ExtraLight.ttf") format("truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: Cedarville_Cursive;
+    src: url("../fonts/cursiva/CedarvilleCursive-Regular.ttf") format("truetype");
+    font-weight: 100;
+}
