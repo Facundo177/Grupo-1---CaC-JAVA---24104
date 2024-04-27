@@ -1,17 +1,14 @@
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
+
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 35%;
+  bottom: calc(50vh - 12rem); 
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 92vh;
+  height: calc(100vh - 60px);
   background-color: hsl(0, 0%, 10%);  
 }
 
@@ -42,13 +39,6 @@
     margin-top: 7rem;
   }
 }
-
-
-
-
-
-
-
 
 
 body{
@@ -83,7 +73,7 @@ body{
 }
 
 #carousel-2{
-  background-image: url("../assets/img/amanecer-playa-1462x2047.webp");
+  background-image: url("../assets/img/portada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -94,4 +84,85 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light; 
+}
+
+
+
+
+
+.redsoc{
+  fill: hsl(0, 0%, 15%);
+}
+
+.redsoc:hover{
+  svg{
+    transform: scale(1.1);
+    fill: hsl(0, 0%, 5%);
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 85%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 65%, 0.9);
+  border-radius: 10px;
+/*   box-shadow: hsl(0, 0%, 65%) 0px 0px 3px 3px; */
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 50%);
+}
+
+
+.carousel-caption{
+  h1{
+    font-family: Cedarville_Cursive;
+    font-size: 3.5rem; 
+  }
+
+  p{
+    font-size: 1.5rem; 
+    font-style: italic;
+
+    .btn{
+      font-style: normal;
+    }
+  }
+}
+
+
+
+#galeria{
+  padding-top: 4rem;
+}
+
+
+
+
+.flecha-volver-inicio{
+  position: fixed;
+  right: 0.5rem; 
+  bottom: 1rem;
+  width: 2rem;
+  background-color: transparent;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.flecha-volver-inicio:hover{
+  svg{
+    fill: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+  }
+
 }
