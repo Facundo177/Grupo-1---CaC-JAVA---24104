@@ -59,10 +59,32 @@ body{
   }
 }
 
+
+
+.card{
+  .foto-carta{
+    max-height: 400px;
+    overflow: hidden;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .card-body{
+    .btn{
+      border-radius: 20px; 
+      box-shadow: 1px 1px;
+      box-shadow: hsl(0, 0%, 25%) 1px 1px 1px 1px;
+    }
+  }
+}
+
 .card:hover{
   transform: scale(1.05);
   transition-duration: 0.5s;
 }
+
 
 
 #carousel-1{
@@ -104,7 +126,7 @@ body{
 
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -151,6 +173,7 @@ body{
 
 
 .flecha-volver-inicio{
+  z-index: 110;
   position: fixed;
   right: 0.5rem; 
   bottom: 1rem;
