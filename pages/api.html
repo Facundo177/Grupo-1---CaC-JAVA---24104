@@ -7,13 +7,11 @@
     <title>Grupo 1</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/danza.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body style="height: 100%;">
 
-    <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
         <div class="container">
@@ -24,19 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample07">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Álbumes</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/danza.html">Danza</a></li>
-                            <li><a class="dropdown-item" href="../pages/fotografia-artistica.html">Fotografía Artística</a></li>
-                            <li><a class="dropdown-item" href="../pages/retratos.html">Retratos</a></li>
-                            <li><a class="dropdown-item" href="../pages/urbanismo.html">Urbanismo</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse pd-auto justify-content-end" id="navbarsExample07">
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                     <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..."
                         aria-label="Search">
@@ -45,7 +31,8 @@
                 <div class="text-end">
                     <a href="../pages/login.html"><button type="button"
                             class="btn btn-outline-light me-2">Login</button></a>
-                    <a href="../pages/registro.html"><button type="button" class="btn btn-light">Registrarse</button></a>
+                    <a href="../pages/registro.html"><button type="button"
+                            class="btn btn-light">Registrarse</button></a>
                 </div>
             </div>
         </div>
@@ -54,34 +41,116 @@
 
 
 
-<main>
-    <div class="justify-content-center text-center py-2">
-        <h1 class="py-2">Danza</h1>
-        <p>En cada movimiento capturado, las fotos de danza nos cuentan historias de gracia, pasión y expresión que trascienden el tiempo y el espacio.</p>
+
+
+
+
+
+
+
+
+
+    <!-- Traer imágenes de API -->
+    <div class="container py-4">
+
+        <div class="text-center">
+            <h2>API Image Search</h2>
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+        </div>
+
+        <div class="input-group my-3 px-4">
+            <input type="text" id="queryApi" class="form-control rounded mx-2" placeholder="Buscar imágen..."
+                aria-label="Buscar imágen">
+            <div class="input-group-append mx-2">
+                <button id="botonQueryApi" class="btn btn-outline-secondary" type="button">Buscar</button>
+            </div>
+        </div>
+
+
     </div>
-    <div id="gallery" class="container-fluid">
-        <img src="../assets/img/GaleriaBallet/1ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/2ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/3ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/6ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/7ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/9ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/12ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/acfd16891b0c23ed9ad2dd1d7252238c.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/ballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/ballet6.png" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/chballet.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/e2c95ffdea74645269beab17b5b25695.jpg" class="img-responsive">
-        <img src="../assets/img/GaleriaBallet/nballet.jpg" class="img-responsive">
+
+
+
+
+
+
+
+
+    <!-- Galería de fotos -->
+
+    <div class="container text-center pt-0" id="galeria">
+        <div class="row">
+
+
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="foto-carta" style="max-height: 600px;">
+                        <img id="imagenApi1" class="card-img-top" alt="..." loading="lazy">
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                        <a id="fotografo1" target="_blank" class="text-decoration-none text-black">
+                            <h5 id="nombreFotografo1" class="card-title"></h5>
+                        </a>
+                        <a id="original1" class="btn btn-outline-dark" target="_blank">Original</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="foto-carta" style="max-height: 600px;">
+                        <img id="imagenApi2" class="card-img-top" alt="..." loading="lazy">
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                        <a id="fotografo2" target="_blank" class="text-decoration-none text-black">
+                            <h5 id="nombreFotografo2" class="card-title"></h5>
+                        </a>
+                        <a id="original2" class="btn btn-outline-dark" target="_blank">Original</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="foto-carta" style="max-height: 600px;">
+                        <img id="imagenApi3" class="card-img-top" alt="..." loading="lazy"> 
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                        <a id="fotografo3" target="_blank" class="text-decoration-none text-black">
+                            <h5 id="nombreFotografo3" class="card-title"></h5>
+                        </a>
+                        <a id="original3" class="btn btn-outline-dark" target="_blank">Original</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="foto-carta" style="max-height: 600px;">
+                        <img id="imagenApi4" class="card-img-top" alt="..." loading="lazy">
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                        <a id="fotografo4" target="_blank" class="text-decoration-none text-black">
+                            <h5 id="nombreFotografo4" class="card-title"></h5>
+                        </a>
+                        <a id="original4" class="btn btn-outline-dark" target="_blank">Original</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
-</main>
 
 
 
 
 
-    <footer id="contacto">
+
+
+
+    <footer id="contacto justify-content-end">
 
         <div class="container">
             <div class="py-4">
@@ -158,8 +227,10 @@
         </svg></a>
 
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
 
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/api.js"></script>
 </body>
 
 </html>
