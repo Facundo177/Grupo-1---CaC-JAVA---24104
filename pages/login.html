@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 
 <main>
 
-    <form>
+    <form id="formLogin">
         <img class="mb-4 logo" src="../assets/img/MaterialSymbolsCamera.svg" alt="" width="72" height="57" draggable="false">
         <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
 
@@ -38,6 +38,7 @@
         <div class="form-floating mb-3">
             <input type="password" class="form-control" id="contrasena" placeholder="Password" required>
             <label for="contrasena">Contraseña</label>
+            <div class="invalid-feedback" id="errorPassword"></div>
         </div>
 
         <div class="checkbox mb-3">
@@ -109,6 +110,7 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validarInicioSesion.js"></script>
 </body>
 
 </html>

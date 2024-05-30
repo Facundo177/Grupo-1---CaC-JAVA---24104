@@ -1,3 +1,10 @@
+const fechaNacimiento = document.getElementById("edad");
+let date = new Date(Date.now());
+date = date.toLocaleDateString("en-GB").split('/').reverse().join('-');
+fechaNacimiento.max = date;
+fechaNacimiento.value = date;
+
+
 const checkPasswordValidity = (value) => {
     const isNonWhiteSpace = /^\S*$/;
     if (!isNonWhiteSpace.test(value)) {
@@ -62,6 +69,7 @@ document.getElementById('formRegistro').addEventListener('submit', (event) => {
 
     if (!message) {
         document.getElementById("formRegistro").submit();
+        window.location.href = "../index.html";
     } else {
         console.log(message);
         error.innerText = message;
@@ -69,3 +77,5 @@ document.getElementById('formRegistro').addEventListener('submit', (event) => {
         document.getElementById('formRegistro').classList.add("was-validated");
     }
 });
+
+
