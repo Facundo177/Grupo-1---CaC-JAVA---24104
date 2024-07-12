@@ -47,6 +47,8 @@ function buscarImagen(query = getQuery()) {
 
 
 
+
+
 window.onload = buscarImagen('nature');
 
 document.getElementById("botonQueryApi").addEventListener("click", () => {buscarImagen()});
@@ -57,3 +59,73 @@ document.getElementById("queryApi").addEventListener("keyup", (event) => {
 });
 
 
+document.getElementById("guardar1").addEventListener("click", () => {
+    let foto = {
+        "urlImagen": document.getElementById("imagenApi1").src,
+        "urlFotografo": document.getElementById("fotografo1").href,
+        "nombreFotografo": document.getElementById("nombreFotografo1").innerText,
+        "urlOrigen": document.getElementById("original1").href
+    }
+
+    fetch("http://localhost:8080/webapp/fotos", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(foto)
+    })
+    .then(res => console.log("Request complete! response:", res))
+    .catch(err => console.error(err));
+});
+
+
+document.getElementById("guardar2").addEventListener("click", () => {
+    let foto = {
+        "urlImagen": document.getElementById("imagenApi2").src,
+        "urlFotografo": document.getElementById("fotografo2").href,
+        "nombreFotografo": document.getElementById("nombreFotografo2").innerText,
+        "urlOrigen": document.getElementById("original2").href
+    }
+
+    fetch("http://localhost:8080/webapp/fotos", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(foto)
+    })
+    .then(res => console.log("Request complete! response:", res))
+    .catch(err => console.error(err));
+});
+
+
+document.getElementById("guardar3").addEventListener("click", () => {
+    let foto = {
+        "urlImagen": document.getElementById("imagenApi3").src,
+        "urlFotografo": document.getElementById("fotografo3").href,
+        "nombreFotografo": document.getElementById("nombreFotografo3").innerText,
+        "urlOrigen": document.getElementById("original3").href
+    }
+
+    fetch("http://localhost:8080/webapp/fotos", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(foto)
+    })
+    .then(res => console.log("Request complete! response:", res))
+    .catch(err => console.error(err));
+});
+
+
+document.getElementById("guardar4").addEventListener("click", () => {
+    let foto = {
+        "urlImagen": document.getElementById("imagenApi4").src,
+        "urlFotografo": document.getElementById("fotografo4").href,
+        "nombreFotografo": document.getElementById("nombreFotografo4").innerText,
+        "urlOrigen": document.getElementById("original4").href
+    }
+
+    fetch("http://localhost:8080/webapp/fotos", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(foto)
+    })
+    .then(res => console.log("Request complete! response:", res))
+    .catch(err => console.error(err));
+});

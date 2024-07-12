@@ -36,115 +36,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    <!-- Traer imágenes de API -->
-    <div class="container py-4">
-
-        <div class="text-center">
-            <h2>Buscador de fotografías</h2>
-            <a href="https://www.pexels.com" target="_blank">Photos provided by Pexels</a>
-        </div>
-
-        <div class="input-group my-3 px-4">
-            <input type="text" id="queryApi" class="form-control rounded mx-2" placeholder="Buscar imágen..."
-                aria-label="Buscar imágen">
-            <div class="input-group-append mx-2">
-                <button id="botonQueryApi" class="btn btn-outline-secondary" type="button">Buscar</button>
-            </div>
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
     <!-- Galería de fotos -->
 
-    <div class="container text-center pt-0" id="galeria">
-        <div class="row">
-
-
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="foto-carta" style="max-height: 600px;">
-                        <img id="imagenApi1" class="card-img-top" alt="..." loading="lazy">
-                    </div>
-                    <div class="card-body d-flex justify-content-between">
-                        <a id="fotografo1" target="_blank" class="text-decoration-none text-black">
-                            <h5 id="nombreFotografo1" class="card-title"></h5>
-                        </a>
-                        <div>
-                            <button id="guardar1" class="btn btn-outline-dark mx-1">Guardar</button>
-                            <a id="original1" class="btn btn-outline-dark" target="_blank">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="foto-carta" style="max-height: 600px;">
-                        <img id="imagenApi2" class="card-img-top" alt="..." loading="lazy">
-                    </div>
-                    <div class="card-body d-flex justify-content-between">
-                        <a id="fotografo2" target="_blank" class="text-decoration-none text-black">
-                            <h5 id="nombreFotografo2" class="card-title"></h5>
-                        </a>
-                        <div>
-                            <button id="guardar2" class="btn btn-outline-dark mx-1">Guardar</button>
-                            <a id="original2" class="btn btn-outline-dark" target="_blank">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="foto-carta" style="max-height: 600px;">
-                        <img id="imagenApi3" class="card-img-top" alt="..." loading="lazy"> 
-                    </div>
-                    <div class="card-body d-flex justify-content-between">
-                        <a id="fotografo3" target="_blank" class="text-decoration-none text-black">
-                            <h5 id="nombreFotografo3" class="card-title"></h5>
-                        </a>
-                        <div>
-                            <button id="guardar3" class="btn btn-outline-dark mx-1">Guardar</button>
-                            <a id="original3" class="btn btn-outline-dark" target="_blank">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="foto-carta" style="max-height: 600px;">
-                        <img id="imagenApi4" class="card-img-top" alt="..." loading="lazy">
-                    </div>
-                    <div class="card-body d-flex justify-content-between">
-                        <a id="fotografo4" target="_blank" class="text-decoration-none text-black">
-                            <h5 id="nombreFotografo4" class="card-title"></h5>
-                        </a>
-                        <div>
-                            <button id="guardar4" class="btn btn-outline-dark mx-1">Guardar</button>
-                            <a id="original4" class="btn btn-outline-dark" target="_blank">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="container text-center pt-4" id="galeria">
+        <div id="filasGaleria" class="row">
 
         </div>
     </div>
@@ -237,7 +132,8 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/api.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/fotos.js"></script>
 </body>
 
 </html>
